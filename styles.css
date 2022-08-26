@@ -72,8 +72,6 @@ nav {
     margin-top: 40px;
     flex-flow: row wrap;
     justify-content: center;
-
-
 }
 
 .column-1 {
@@ -153,7 +151,7 @@ h2 {
 }
 
 .white:hover {
-        padding-left: 25px;
+    padding-left: 25px;
 }
 
 .green {
