@@ -29,7 +29,6 @@ a {
     justify-content: space-between;
     margin: auto;
     width: 1175px;
-
 }
 
 h1 {
@@ -51,15 +50,45 @@ h1, nav a {
 
 }
 
-
 nav a {
     font-size: 20px;
     padding-bottom: 26px;
 }
 
-nav a:hover {
-    border-bottom: solid 2px;
+.navi {
+    display: inline;
+    position: relative;
 }
+
+
+.navi:after {
+    background-color: #CE2020;
+    top: 50px;
+
+}
+
+.browse-btn a:after{
+    background-color: #000;
+    top: 35px;
+}
+
+.navi:after, .browse-btn a:after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    width: 0;
+    transition: width 0.2s ease;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.navi:hover:after, .browse-btn a:hover:after {
+    width: 100%;
+}
+
 
 nav {
     padding-top: 8px;
@@ -72,6 +101,7 @@ nav {
     margin-top: 40px;
     flex-flow: row wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .column-1 {
@@ -100,18 +130,20 @@ h2 {
 .browse-btn {
     text-transform: uppercase;
     margin: 15px 0 0 0;
+    position: relative;
+    width: 173px;
 }
 
 .browse-btn a {
     font-size: 20px;
-    padding-bottom: 5px;
-}
-
-.browse-btn a:hover {
-    border-bottom: solid 2px black;
 }
 
 /*** Image Columns ***/
+
+.img-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .column {
     align-items: center;
